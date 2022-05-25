@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListaCursos.MainPage">
+
+    <StackLayout>
+
+        <Frame BackgroundColor="Aquamarine" Padding="20"        >
+
+            <Label Text="CURSOS" HorizontalTextAlignment="Center" FontSize="36" FontAttributes="Bold"/>
+
+        </Frame>
+
+        <Entry x:Name="edtCursos" Placeholder="Informe os Cursos"/>
+
+        <Button x:Name="btnInserir" Text="Inserir" Clicked="btnInserir_Clicked"/>
+
+        <SearchBar x:Name="sbCursos" TextChanged="sbCursos_TextChanged"/>
+
+        <ListView x:Name="lstCursos" ItemSelected="lstCursos_ItemSelected"/>
+
+    </StackLayout>
+
+</ContentPage>
